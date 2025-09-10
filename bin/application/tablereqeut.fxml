@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.tablereqeutcontroller">
+   <children>
+      <TableView fx:id="teacher" layoutX="-1.0" layoutY="174.0" prefHeight="430.0" prefWidth="850.0" style="-fx-background-image: #2b2e38;">
+         <columns>
+            <TableColumn fx:id="TeacherID" prefWidth="75.0" style="-fx-background-color: white; -fx-border-color: black;" text="TeacherID" />
+            <TableColumn fx:id="First_Name" prefWidth="140.8000259399414" style="-fx-background-color: white; -fx-border-color: black;" text="First_Name" />
+            <TableColumn fx:id="Last_Name" prefWidth="151.99993896484375" style="-fx-background-color: white; -fx-border-color: black;" text="Last_Name" />
+            <TableColumn fx:id="Title" prefWidth="179.20004272460938" style="-fx-background-color: white; -fx-border-color: black;" text="Titel" />
+            <TableColumn fx:id="Subjects_Taught" prefWidth="148.7999267578125" style="-fx-background-color: white; -fx-border-color: black;" text="Subjects Taught" />
+            <TableColumn fx:id="Level" prefWidth="155.2000732421875" style="-fx-background-color: white; -fx-border-color: black;" text="Level" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="84.0" layoutY="14.0" prefHeight="67.0" prefWidth="681.0" style="-fx-background-color: white; -fx-border-color: black;" text="find the teacher who teaches the student with ID " textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="111.0" prefHeight="18.0" prefWidth="78.0" text="StudentID" />
+      <TextField fx:id="StudentID" layoutX="123.0" layoutY="108.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-back-100.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="10.0" layoutY="17.0" minWidth="40.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="31.0" prefWidth="40.0" text="Button" />
+      <ImageView fitHeight="87.0" fitWidth="87.0" layoutX="634.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-research-96.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="649.0" layoutY="95.0" mnemonicParsing="false" onAction="#reqeut1" opacity="0.0" prefHeight="67.0" prefWidth="59.0" text="Button" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student_classescontroller">
+   <children>
+      <TextField fx:id="scherche" layoutX="92.0" layoutY="6.0" prefHeight="40.0" prefWidth="430.0" promptText="scherche" style="-fx-background-color: white; -fx-border-color: black;" />
+      <TableView fx:id="student_classes" layoutY="170.0" prefHeight="430.0" prefWidth="850.0" style="-fx-background-image: #2b2e38;">
+        <columns>
+          <TableColumn fx:id="ClassID" prefWidth="425.0" style="-fx-background-color: white; -fx-border-color: black;" text="ClassID" />
+            <TableColumn fx:id="StudentID" prefWidth="429.3332824707031" style="-fx-background-color: white; -fx-border-color: black;" text="StudentID" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../image/vers-le-bas.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="8.0" layoutY="8.0" minWidth="46.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="40.0" prefWidth="46.0" text="Button" />
+      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="486.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/rechercher.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="476.0" layoutY="6.0" mnemonicParsing="false" onAction="#sherche" opacity="0.0" prefHeight="55.0" prefWidth="54.0" text="sherche" />
+      <Label alignment="CENTER" layoutX="600.0" prefHeight="55.0" prefWidth="249.0" style="-fx-background-color: white; -fx-border-color: black;" text="Student_classes" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="74.0" layoutX="161.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-add-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="74.0" layoutX="248.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-modify-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="74.0" layoutX="339.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-delete-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="161.0" layoutY="135.0" prefHeight="18.0" prefWidth="62.0" text="inseré" />
+      <Label layoutX="244.0" layoutY="135.0" prefHeight="18.0" prefWidth="62.0" text="modifie" />
+      <Label layoutX="339.0" layoutY="135.0" prefHeight="18.0" prefWidth="62.0" text="supprimi" />
+      <Button layoutX="161.0" layoutY="80.0" mnemonicParsing="false" onAction="#insere" opacity="0.0" prefHeight="55.0" prefWidth="62.0" style="-fx-background-color: #ffeba7;" text="inseré">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="248.0" layoutY="80.0" mnemonicParsing="false" onAction="#modifie" opacity="0.0" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: #ffeba7;" text="modifie">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="339.0" layoutY="80.0" mnemonicParsing="false" onAction="#supprimi" opacity="0.0" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: #ffeba7;" text="supprimi">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="76.0" fitWidth="55.0" layoutX="21.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../image/fleche-vers-le-haut-sur-un-fond-de-cercle-noir.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="55.0" layoutX="92.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fleche-vers-le-haut-sur-un-fond-de-cercle-noir.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="24.0" layoutY="80.0" mnemonicParsing="false" onAction="#desc" opacity="0.0" prefHeight="55.0" prefWidth="55.0" text="Button" />
+      <Button layoutX="89.0" layoutY="80.0" mnemonicParsing="false" onAction="#asc" opacity="0.0" prefHeight="55.0" prefWidth="55.0" text="Button" />
+   </children>
+</AnchorPane>

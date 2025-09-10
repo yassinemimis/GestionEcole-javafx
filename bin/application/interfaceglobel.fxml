@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.globelcontroller">
+   <children>
+      <ImageView fitHeight="626.0" fitWidth="968.0" layoutX="-67.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/5514.jpg" />
+         </image>
+      </ImageView>
+      <Label opacity="0.69" prefHeight="605.0" prefWidth="850.0" style="-fx-background-color: black;" />
+      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="18.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/download%20(4).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="58.0" layoutY="29.0" text="sign out" />
+      <Button layoutX="18.0" layoutY="18.0" minWidth="46.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="40.0" prefWidth="104.0" text="Button" />
+      <ImageView fitHeight="106.0" fitWidth="120.0" layoutX="644.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/salle-de-classe.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="128.0" layoutX="656.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/R.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="142.0" layoutX="656.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-school-80.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="123.0" layoutX="372.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/tableau-de-bord.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="164.0" layoutX="372.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-classroom-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="164.0" layoutX="99.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/professeur.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="164.0" layoutX="87.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/1098061.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="644.0" layoutY="420.0" mnemonicParsing="false" onAction="#btnsubject" opacity="0.0" prefHeight="106.0" prefWidth="164.0" style="-fx-background-color: #ffeba7;" text="Subject">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="638.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnclass" opacity="0.0" prefHeight="106.0" prefWidth="164.0" style="-fx-background-color: #ffeba7;" text="Class">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="638.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnstudent" opacity="0.0" prefHeight="106.0" prefWidth="164.0" style="-fx-background-color: #ffeba7;" text="Student">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="343.0" layoutY="86.0" mnemonicParsing="false" onAction="#initialize" opacity="0.0" prefHeight="106.0" prefWidth="164.0" style="-fx-background-color: #ffeba7;" text="Dashbord">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="58.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnclassstudent_classes" opacity="0.0" prefHeight="106.0" prefWidth="164.0" style="-fx-background-color: #ffeba7;" text="Student_Classes">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="70.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnteacher" opacity="0.0" prefHeight="106.0" prefWidth="164.0" style="-fx-background-color: #ffeba7;" text="Teacher">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="343.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnclassroom" opacity="0.0" prefHeight="106.0" prefWidth="164.0" style="-fx-background-color: #ffeba7;" text="Classroom">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label layoutX="664.0" layoutY="202.0" prefHeight="18.0" prefWidth="90.0" text="Class" textFill="WHITE" />
+      <Label layoutX="675.0" layoutY="363.0" prefHeight="18.0" prefWidth="90.0" text="Student" textFill="WHITE" />
+      <Label layoutX="675.0" layoutY="535.0" prefHeight="18.0" prefWidth="90.0" text="Subject" textFill="WHITE" />
+      <Label layoutX="114.0" layoutY="362.0" prefHeight="18.0" prefWidth="90.0" text="Teacher" textFill="WHITE" />
+      <Label layoutX="380.0" layoutY="363.0" prefHeight="18.0" prefWidth="90.0" text="Classroom" textFill="WHITE" />
+      <Label layoutX="387.0" layoutY="202.0" prefHeight="18.0" prefWidth="90.0" />
+      <Label layoutX="88.0" layoutY="202.0" prefHeight="18.0" prefWidth="104.0" text="Student_Classes" textFill="WHITE" />
+      <Label layoutX="387.0" layoutY="202.0" prefHeight="18.0" prefWidth="90.0" text="Dashbord" textFill="WHITE" />
+      <ImageView fitHeight="106.0" fitWidth="164.0" layoutX="369.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-settings-64.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="350.0" layoutY="419.0" mnemonicParsing="false" onAction="#Settings" opacity="0.0" prefHeight="106.0" prefWidth="164.0" style="-fx-background-color: #ffeba7;" text="Teacher">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label layoutX="386.0" layoutY="517.0" prefHeight="18.0" prefWidth="90.0" text="Settings" textFill="WHITE" />
+   </children>
+</AnchorPane>
